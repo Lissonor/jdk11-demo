@@ -21,25 +21,25 @@ public class Jdk11Demo {
 	 * @return void
 	 */
 	private void getJdkInfo() {
-		System.out.println(System.getProperty("java.version"));
-		System.out.println(System.getProperty("java.vendor"));     
-        System.out.println(System.getProperty("java.vendor.url"));     
-        System.out.println(System.getProperty("java.home"));     
-        System.out.println(System.getProperty("java.vm.specification.version"));     
-        System.out.println(System.getProperty("java.vm.specification.vendor"));     
-        System.out.println(System.getProperty("java.vm.specification.name"));     
-        System.out.println(System.getProperty("java.vm.version"));     
-        System.out.println(System.getProperty("java.vm.vendor"));     
-        System.out.println(System.getProperty("java.vm.name"));     
-        System.out.println(System.getProperty("java.specification.version"));     
-        System.out.println(System.getProperty("java.specification.vendor"));     
-        System.out.println(System.getProperty("java.specification.name"));     
-        System.out.println(System.getProperty("java.class.version"));     
-        System.out.println(System.getProperty("java.class.path"));     
-        System.out.println(System.getProperty("java.library.path"));     
-        System.out.println(System.getProperty("java.io.tmpdir"));     
-        System.out.println(System.getProperty("java.compiler"));     
-        System.out.println(System.getProperty("java.ext.dirs")); 
+		System.out.println(getProperty("java.version"));
+		System.out.println(getProperty("java.vendor"));     
+        System.out.println(getProperty("java.vendor.url"));     
+        System.out.println(getProperty("java.home"));     
+        System.out.println(getProperty("java.vm.specification.version"));     
+        System.out.println(getProperty("java.vm.specification.vendor"));     
+        System.out.println(getProperty("java.vm.specification.name"));     
+        System.out.println(getProperty("java.vm.version"));     
+        System.out.println(getProperty("java.vm.vendor"));     
+        System.out.println(getProperty("java.vm.name"));     
+        System.out.println(getProperty("java.specification.version"));     
+        System.out.println(getProperty("java.specification.vendor"));     
+        System.out.println(getProperty("java.specification.name"));     
+        System.out.println(getProperty("java.class.version"));     
+        System.out.println(getProperty("java.class.path"));     
+        System.out.println(getProperty("java.library.path"));     
+        System.out.println(getProperty("java.io.tmpdir"));     
+        System.out.println(getProperty("java.compiler"));     
+        System.out.println(getProperty("java.ext.dirs")); 
 	}
 
 	/**
@@ -49,17 +49,26 @@ public class Jdk11Demo {
 	 * @return void
 	 */
 	private void getSystemInfo() {
-		System.out.println(System.getProperty("os.name"));     
-        System.out.println(System.getProperty("os.arch"));     
-        System.out.println(System.getProperty("os.version"));     
-        System.out.println(System.getProperty("file.separator"));     
-        System.out.println(System.getProperty("path.separator"));     
-        System.out.println(System.getProperty("line.separator"));     
-        System.out.println(System.getProperty("user.name"));     
-        System.out.println(System.getProperty("user.home"));                     
-        System.out.println(System.getProperty("user.dir")); 
+		System.out.println(getProperty("os.name"));     
+        System.out.println(getProperty("os.arch"));     
+        System.out.println(getProperty("os.version"));     
+        System.out.println(getProperty("file.separator"));     
+        System.out.println(getProperty("path.separator"));     
+        System.out.println(getProperty("line.separator"));     
+        System.out.println(getProperty("user.name"));     
+        System.out.println(getProperty("user.home"));                     
+        System.out.println(getProperty("user.dir")); 
         System.out.println("————————end");
 	}
 	
+	/**
+	 * @description 获取属性
+	 * @author Ian
+	 * @date 2019年2月19日 下午2:44:22
+	 * @return String
+	 */
+	private static String getProperty(String para) {
+		return System.getProperty(para);
+	}
 }
 
